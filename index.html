@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashish Sharda — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Portfolio of Ashish Sharda — Front-End Developer (React, Angular, TypeScript, WordPress)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light dark; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(10px); }
+    .dark .glass { background: rgba(15,23,42,0.5); }
+    .card-hover { transition: transform .2s ease, box-shadow .2s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 30px -10px rgba(0,0,0,.35); }
+    .chip { border: 1px solid rgb(226 232 240); }
+    .dark .chip { border-color: rgb(51 65 85); }
+    .highlight-box { background: linear-gradient(to right, #eef2ff, #e0e7ff); }
+    .dark .highlight-box { background: linear-gradient(to right, #1e1b4b, #312e81); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/70 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#top" class="font-extrabold tracking-tight text-xl">Ashish <span class="text-indigo-600">Sharda</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="modeBtn" class="inline-flex items-center rounded-xl px-3 py-1.5 text-xs font-medium border chip hover:bg-slate-50 dark:hover:bg-slate-800" aria-label="Toggle dark mode">Toggle mode</button>
+          <a href="#contact" class="hidden sm:inline-flex items-center rounded-xl px-3 py-1.5 text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-500">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-indigo-50/60 via-transparent to-transparent dark:from-indigo-950/40 pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Hi, I'm <span class="text-indigo-600">Ashish Sharda</span></h1>
+          <p class="mt-4 text-lg md:text-xl text-slate-600 dark:text-slate-300">
+            Front‑End Developer with 5+ years' experience building fast, accessible interfaces using
+            <strong>React</strong>, <strong>Angular</strong>, <strong>TypeScript</strong>, and <strong>WordPress</strong>. I love crafting reusable UI, integrating APIs/GraphQL,
+            and shipping with CI/CD on Vercel & Hostinger.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-2">
+            <span class="chip rounded-full px-3 py-1 text-xs">React</span>
+            <span class="chip rounded-full px-3 py-1 text-xs">Angular</span>
+            <span class="chip rounded-full px-3 py-1 text-xs">TypeScript</span>
+            <span class="chip rounded-full px-3 py-1 text-xs">GraphQL</span>
+            <span class="chip rounded-full px-3 py-1 text-xs">WordPress</span>
+            <span class="chip rounded-full px-3 py-1 text-xs">CI/CD</span>
+          </div>
+          <div class="mt-8 flex gap-3">
+            <a href="#projects" class="rounded-xl px-4 py-2 bg-indigo-600 text-white font-semibold hover:bg-indigo-500">See Projects</a>
+            <a href="mailto:shardaashish097@gmail.com" class="rounded-xl px-4 py-2 border chip font-semibold hover:bg-slate-50 dark:hover:bg-slate-800">Email Me</a>
+          </div>
+        </div>
+        <div class="highlight-box rounded-3xl p-6 shadow-xl card-hover">
+          <h3 class="text-base font-semibold text-slate-700 dark:text-slate-200 mb-2">About me</h3>
+          <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+            I turn designs and wireframes into performant, reusable components. I've led releases, migrated legacy UI to
+            Web Components, and worked closely with BAs to refine requirements and mockups. I enjoy collaborating across
+            design, QA, and backend to deliver quality—on time.
+          </p>
+          <dl class="mt-6 grid grid-cols-2 gap-3 text-sm">
+            <div><dt class="text-slate-500">Location</dt><dd class="font-medium">Chirawa, Rajasthan</dd></div>
+            <div><dt class="text-slate-500">Experience</dt><dd class="font-medium">5+ years</dd></div>
+            <div><dt class="text-slate-500">Email</dt><dd class="font-medium">shardaashish097@gmail.com</dd></div>
+            <div><dt class="text-slate-500">LinkedIn</dt><dd class="font-medium"><a class="underline hover:text-indigo-600" href="https://linkedin.com/in/ashish-sharda-0b96a049" target="_blank" rel="noopener">/ashish-sharda-0b96a049</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-12 md:py-20 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Personal Projects</h2>
+          <p class="mt-1 text-slate-500">End‑to‑end ownership: implementation, hosting, and CI/CD.</p>
+        </div>
+        <div class="w-full max-w-xs">
+          <label class="block text-xs text-slate-500 mb-1" for="search">Quick search</label>
+          <input id="search" type="text" placeholder="Filter by tech or name…" class="w-full rounded-xl border chip px-3 py-2 text-sm bg-white/80 dark:bg-slate-900/70" />
+        </div>
+      </div>
+
+      <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <template id="cardTpl">
+        <article class="card-hover rounded-2xl border chip bg-white/80 dark:bg-slate-900/70 p-5 flex flex-col">
+          <h3 class="font-semibold text-lg leading-snug mb-2"></h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 flex-1"></p>
+          <div class="mt-4 flex flex-wrap gap-2"></div>
+          <div class="mt-5 flex gap-2">
+            <a class="visit inline-flex justify-center items-center rounded-lg px-3 py-2 text-sm font-semibold bg-indigo-600 text-white hover:bg-indigo-500" target="_blank" rel="noopener">Visit Site</a>
+            <button class="preview inline-flex justify-center items-center rounded-lg px-3 py-2 text-sm font-semibold border chip hover:bg-slate-50 dark:hover:bg-slate-800">Preview</button>
+          </div>
+          <div class="iframeWrap hidden mt-4 rounded-xl overflow-hidden border chip">
+            <iframe class="w-full h-72 bg-white" loading="lazy"></iframe>
+          </div>
+        </article>
+      </template>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Get in touch</h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Open to full‑time roles and freelance collaborations. If you like what you see, let's build something great.</p>
+        </div>
+        <div class="highlight-box rounded-2xl p-6">
+          <dl class="grid grid-cols-1 gap-3 text-sm">
+            <div>
+              <dt class="text-slate-500">Email</dt>
+              <dd class="font-medium"><a class="underline hover:text-indigo-600" href="mailto:shardaashish097@gmail.com">shardaashish097@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Phone</dt>
+              <dd class="font-medium"><a class="underline hover:text-indigo-600" href="tel:+919024949769">+91 90249 49769</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">LinkedIn</dt>
+              <dd class="font-medium"><a class="underline hover:text-indigo-600" href="https://linkedin.com/in/ashish-sharda-0b96a049" target="_blank" rel="noopener">/ashish-sharda-0b96a049</a></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500">
+    © <span id="year"></span> Ashish Sharda. All rights reserved.
+  </footer>
+
+  <script>
+    // Dark mode toggle with persistence
+    const modeBtn = document.getElementById('modeBtn');
+    const applyMode = () => {
+      const pref = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.classList.toggle('dark', pref === 'dark');
+      modeBtn.textContent = pref === 'dark' ? 'Light mode' : 'Dark mode';
+    };
+    modeBtn.addEventListener('click', () => {
+      const current = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyMode();
+    });
+    applyMode();
+
+    // Projects data
+    const projects = [
+      {
+        name: 'HealingPoint',
+        url: 'https://healingpoint.in/',
+        desc: 'Health & wellness blog built on WordPress. Fully implemented & deployed by me on Hostinger.',
+        tags: ['WordPress', 'Hostinger', 'SEO']
+      },
+      {
+        name: 'Kafirana',
+        url: 'https://kafirana.com/',
+        desc: 'News & blogs platform on WordPress. End-to-end build & deployment on Hostinger.',
+        tags: ['WordPress', 'Hostinger']
+      },
+      {
+        name: 'TravellingMate',
+        url: 'http://travellingmate.com/',
+        desc: 'Travel-focused blog website implemented & deployed independently on Hostinger.',
+        tags: ['WordPress', 'Hostinger']
+      },
+      {
+        name: 'SaavaGreens',
+        url: 'https://saavagreens.com/',
+        desc: 'Green energy business website built using AI website builders.',
+        tags: ['AI', 'Website Builder']
+      },
+      {
+        name: 'ShareMystery',
+        url: 'https://sharemystery.in/',
+        desc: 'AI-based tool hosted on Vercel with GitHub CI/CD (master → production, test → dev).',
+        tags: ['Vercel', 'CI/CD', 'AI']
+      },
+      {
+        name: 'prepAI',
+        url: 'http://prepai.co.in/',
+        desc: 'AI-powered interview platform with Supabase backend. Vercel CI/CD for prod & dev.',
+        tags: ['Vercel', 'Supabase', 'CI/CD', 'AI']
+      }
+    ];
+
+    const grid = document.getElementById('grid');
+    const tpl = document.getElementById('cardTpl');
+
+    function renderCards(list) {
+      grid.innerHTML = '';
+      list.forEach(p => {
+        const node = tpl.content.cloneNode(true);
+        const title = node.querySelector('h3');
+        const desc = node.querySelector('p');
+        const chips = node.querySelector('div.flex.flex-wrap');
+        const visit = node.querySelector('a.visit');
+        const previewBtn = node.querySelector('button.preview');
+        const iframeWrap = node.querySelector('.iframeWrap');
+        const iframe = node.querySelector('iframe');
+
+        title.textContent = p.name;
+        desc.textContent = p.desc;
+        p.tags.forEach(t => {
+          const span = document.createElement('span');
+          span.className = 'chip rounded-full px-2.5 py-1 text-xs';
+          span.textContent = t;
+          chips.appendChild(span);
+        });
+        visit.href = p.url;
+        previewBtn.addEventListener('click', () => {
+          if (!iframe.src) iframe.src = p.url;
+          iframeWrap.classList.toggle('hidden');
+        });
+
+        const article = node.querySelector('article');
+        article.dataset.search = (p.name + ' ' + p.tags.join(' ') + ' ' + p.desc).toLowerCase();
+
+        grid.appendChild(node);
+      });
+    }
+
+    renderCards(projects);
+
+    // Simple search filter
+    const input = document.getElementById('search');
+    input.addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      const cards = Array.from(grid.children);
+      cards.forEach(card => {
+        const match = card.querySelector('article').dataset.search.includes(q);
+        card.classList.toggle('hidden', !match);
+      });
+    });
+
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
